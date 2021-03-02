@@ -141,6 +141,12 @@ end
 
 #### Multiple description terms and values
 
+{% capture gfm-markdown-note %}
+GFM Markdown does not support definitition list syntax and thus the text below
+will look extremely nonsensical
+{% endcapture %}
+{% include note.html content=gfm-markdown-note %}
+
 Term
 : Brief description of Term
 
@@ -170,9 +176,11 @@ Term2
   
 ### More code
 
+{% comment %}
 ```
 Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
 ```
+{% endcomment %}
 
 ```
 The final element.

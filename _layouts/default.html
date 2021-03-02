@@ -42,7 +42,7 @@
     <hr>
     <footer>
       {%- if site.copyright -%}<p>&copy; {{site.copyright }}{%- endif -%}
-      {%- if site.edit -%}
+      {%- if site.edit.link -%}
         {%- assign repository = site.edit.repository | default: site.github.repository_url -%}
         {%- assign branch = site.edit.branch | default: site.github.source.branch -%}
         {%- assign source = site.edit.source | default: site.github.source.path -%}

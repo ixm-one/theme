@@ -105,12 +105,20 @@ figure.highlight, pre.highlight {
   .gt { color: var(--syntax-comment-traceback, var(--syntax-comment)); }
 }
 
-ul.contributors {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style-type: none;
-  padding-left: none;
+ul {
+  &.contributors, &.task-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  &.contributors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+input.task-list-item-checkbox[type="checkbox"]:checked {
+  color: var(--text-foreground);
 }
 
 span.ixm {
