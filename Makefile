@@ -5,4 +5,4 @@ build:
 	bundle exec jekyll build --incremental
 
 serve:
-	bundle exec jekyll serve --incremental --livereload --force_polling
+	bundle exec jekyll serve --incremental --livereload $(if $(WSL_INTEROP),--force_polling)

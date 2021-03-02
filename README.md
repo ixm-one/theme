@@ -16,5 +16,12 @@ Add the following to your `_config.yml`:
 remote_theme: ixm-one/theme
 ```
 
+# Development
+
+A simple `Makefile` is provided for testing the theme locally with the given
+example pages. Simply run `make build` or `make serve` to run the equivalent
+command. If running under WSL2, `--force_polling` is added automatically.
+
 [1]: https://docs.ixm.one
 [2]: https://ixm.one
+
