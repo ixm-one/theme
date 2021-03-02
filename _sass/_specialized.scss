@@ -1,7 +1,10 @@
 figure.highlight, pre.highlight {
   code {
     border: {
-      left: .5rem solid #2d6da3;
+      bottom: var(--syntax-border-bottom, var(--syntax-border, 1px solid #2d6da3));
+      right: var(--syntax-border-right, var(--syntax-border, 1px solid #2d6da3));
+      left: var(--syntax-border-left, var(--syntax-border, .5rem solid #2d6da3));
+      top: var(--syntax-border-top, var(--syntax-border, 1px solid #2d6da3));
       radius: 5px;
     }
     box-shadow: 0 2px 5px 0 var(--black-fade-50);

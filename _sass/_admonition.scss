@@ -1,6 +1,7 @@
 $alerts: warning, danger, info, note, tip;
 
 main > aside {
+  overflow: hidden;
   border: 2px solid var(--alert-border) {
     radius: 5px;
   }
@@ -51,7 +52,7 @@ aside {
       --alert-text-background: var(--#{$alert}-text-background);
       --alert-text-foreground: var(--#{$alert}-text-foreground, var(--text-foreground));
 
-      --alert-border: var(--#{$alert}-border, var(--alert-foreground-color));
+      --alert-border: var(--#{$alert}-border, var(--alert-text-foreground));
       --alert-icon: var(--#{$alert}-icon);
     }
   }

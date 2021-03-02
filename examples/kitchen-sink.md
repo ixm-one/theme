@@ -143,7 +143,7 @@ end
 
 {% capture gfm-markdown-note %}
 GFM Markdown does not support definitition list syntax and thus the text below
-will look extremely nonsensical
+will look extremely nonsensical if *not* using kramdown with GFM extensions
 {% endcapture %}
 {% include note.html content=gfm-markdown-note %}
 
