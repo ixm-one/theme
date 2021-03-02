@@ -1,0 +1,9 @@
+<ul class="contributors">
+  {% for user in include.users %}
+    <li>
+      <a href=" {{ user.html_url }}" alt="{{ user.login }}">
+        {% avatar user=user.login size=50 %}
+      </a>
+    </li>
+  {% endfor %}
+</ul>

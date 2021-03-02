@@ -1,0 +1,31 @@
+title: IXM
+description: A Jekyll theme for IXM's various websites
+show_downloads: false
+markdown: GFM
+sass:
+  style: compressed
+plugins:
+  - jekyll-octicons
+  - jekyll-avatar
+strict_front_matter: true
+
+exclude:
+  - LICENSE.md
+  - Makefile
+  - Gemfile.lock
+  - Gemfile
+
+readme_index:
+  remove_originals: true
+
+# Theme Specific Settings
+edit:
+  repository: 'https://github.com/ixm-one/theme'
+  view-mode: 'edit'
+  branch: 'main'
+  text: 'Edit this page on GitHub'
+  link: true
+
+# Site Specific
+menu:
+  - examples

@@ -1,0 +1,165 @@
+:root, html[data-site="light"] {
+  --text-background: var(--gray-000);
+  --text-foreground: var(--gray-700);
+  --text-font: 'Inter';
+
+  --code-background: var(--red-000);
+  --code-foreground: var(--red);
+  --code-font: 'Cascadia Code';
+
+  --icon-font: 'bootstrap-icons';
+
+  --icon-external-link: var(--icon-box-arrow-up-right);
+  --icon-internal-link: var(--icon-link-45-degrees);
+  --icon-error: var(--icon-exclamation-octagon-fill);
+  --icon-warn: var(--icon-exclamation-triangle-fill);
+
+  --link-color-dark: #285f8f;
+  --link-color: #337ab7;
+
+  --selection-color: var(--selection-light);
+
+  --table-background-stripe: var(--gray-100);
+  --table-background-hover: var(--gray-200);
+  --table-border: var(--gray-500);
+
+  --modal-background: var(--white);
+  --modal-border: var(--gray);
+
+  --danger-header-background: var(--red-900);
+  --danger-header-foreground: var(--red-100);
+  --danger-text-background: var(--red-100);
+  --danger-text-foreground: var(--red-900);
+  --danger-border-color: var(--red-500);
+  --danger-icon: var(--icon-exclamation-circle-fill);
+
+  --warning-header-background: var(--yellow-700);
+  --warning-header-foreground: var(--yellow-100);
+  --warning-text-background: var(--yellow-100);
+  --warning-text-foreground: var(--yellow-900);
+  --warning-border-color: var(--yellow-500);
+  --warning-icon: var(--icon-exclamation-triangle-fill);
+
+  --note-header-background: var(--blue-900);
+  --note-header-foreground: var(--blue-100);
+  --note-text-background: var(--blue-100);
+  --note-text-foreground: var(--blue-900);
+  --note-border-color: var(--blue-500);
+  --note-icon: var(--icon-info-circle-fill);
+
+  --tip-header-background: var(--green-900);
+  --tip-header-foreground: var(--green-100);
+  --tip-text-background: var(--green-100);
+  --tip-text-foreground: var(--green-900);
+  --tip-border-color: var(--green-500);
+  --tip-icon: var(--icon-question-circle-fill);
+
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-background: var(--gray-800);
+    --text-foreground: var(--gray-100);
+    --selection-color: var(--selection-dark);
+    --link-foreground-dark: var(--blue-300);
+    --link-foreground: var(--blue-400);
+    --code-background: var(--blue-900);
+    --code-foreground: var(--blue-300);
+
+    --table-background-stripe: var(--gray-900);
+    --table-background-hover: var(--gray-700);
+    --table-border: var(--gray-400);
+
+    --modal-background: var(--black);
+    --modal-border: var(--gray);
+  }
+}
+
+html {
+  &[data-site="dark"] {
+    :root {
+      --text-background: var(--gray-800);
+      --text-foreground: var(--gray-100);
+      --selection-color: var(--selection-dark);
+      --code-background: var(--blue-900);
+      --code-foreground: var(--blue-300);
+
+      --link-foreground-hover: var(--blue-300);
+      --link-foreground: var(--blue-400);
+
+      --table-background-stripe: var(--gray-900);
+      --table-background-hover: var(--gray-700);
+      --table-border: var(--gray-400);
+
+      --modal-background: var(--black);
+      --modal-border: var(--gray);
+    }
+  }
+}
+
+
+/* Syntax Highlighting Themes */
+
+html[data-syntax="atom-dark"] {
+  --syntax-background: var(--atom-dark-mono-000);
+  --syntax-foreground: var(--atom-dark-mono-500);
+  --syntax-whitespace: #f8f8f2;
+  --syntax-comment: #5c6370;
+  --syntax-error: #960050;
+  --syntax-keyword: #c678dd;
+  --syntax-literal: #98c379;
+  --syntax-name: #abb2bf;
+
+  --syntax-operator: #abb2bf;
+  --syntax-punctuation: #abb2bf;
+  --syntax-comment: #5c6370;
+  --syntax-keyword: #c678dd;
+  --syntax-string: #98c379;
+  --syntax-number: var(--atom-dark-orange);
+
+  --syntax-string-symbol: var(--atom-dark-cyan);
+  --syntax-string-regex: var(--atom-dark-cyan);
+
+  --syntax-name-variable-class: var(--atom-dark-yellow);
+  --syntax-name-variable-global: var(--atom-dark-yellow);
+
+  --syntax-name-integer-long: var(--atom-dark-orange);
+  --syntax-name-attribute: var(--atom-dark-orange);
+  --syntax-name-variable: var(--atom-dark-red);
+  --syntax-name-tag: var(--atom-dark-red);
+
+  --syntax-name-builtin: var(--atom-dark-yellow);
+  --syntax-name-class: var(--atom-dark-yellow);
+  --syntax-name-constant: var(--atom-dark-yellow);
+  --syntax-name-decorator: var(--atom-dark-yellow);
+  --syntax-name-entity: var(--atom-dark-yellow);
+  --syntax-name-exception: var(--atom-dark-yellow);
+  --syntax-name-property: var(--atom-dark-yellow);
+  --syntax-name-label: var(--atom-dark-yellow);
+
+  --syntax-comment-subheading: #75715e;
+  --syntax-comment-inserted: #a6e22e;
+  --syntax-comment-deleted: #f92672;
+
+}
+
+html[data-syntax="ayu-dark"] {
+
+}
+
+/* color values taken from github.com/primer/github-syntax-dark */
+:root {
+  --syntax-keyword: var(--red-400);
+  --syntax-name-entity: var(--purple-300);
+  --syntax-name-tag: #7bcc72;
+  --syntax-comment: var(--gray-400);
+  --syntax-string: var(--blue-300);
+  --syntax-string-regex: var(--syntax-string);
+  --syntax-string-escape: var(--syntax-string);
+  --syntax-foreground: var(--text-foreground);
+  --syntax-background: var(--text-background);
+}
+
+html[data-syntax="github-light"] {
+}

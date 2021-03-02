@@ -1,0 +1,73 @@
+---
+---
+
+:root {
+  --icon-exclamation-triangle-fill: '\f31a';
+  --icon-exclamation-octagon-fill: '\f316';
+  --icon-exclamation-diamond-fill: '\f314';
+  --icon-exclamation-circle-fill: '\f312';
+  --icon-exclamation-square-fill: '\f318';
+
+  --icon-exclamation-triangle: '\f31b';
+  --icon-exclamation-octagon: '\f317';
+  --icon-exclamation-diamond: '\f315';
+  --icon-exclamation-circle: '\f313';
+  --icon-exclamation-square: '\f319';
+
+  --icon-info-circle-fill: '\f40f';
+  --icon-info-square-fill: '\f411';
+  --icon-info-circle: '\f410';
+  --icon-info-square: '\f412';
+
+  --icon-question-octagon-fill: '\f4e1';
+  --icon-question-diamond-fill: '\f4df';
+  --icon-question-circle-fill: '\f4dd';
+  --icon-question-square-fill: '\f4e3';
+
+  --icon-question-octagon: '\f4e2';
+  --icon-question-diamond: '\f4e0';
+  --icon-question-circle: '\f4de';
+  --icon-question-square: '\f4e4';
+
+
+  --icon-box-arrow-up-right: '\f1c5';
+  --icon-link-45-degrees: '\f44d';
+
+  --icon-journal: '\f425';
+  --icon-github: '\f3cd';
+  --icon-close: '\f5e6'; // x-circle-fill
+  --icon-gear: '\f3c2';
+
+  --icon-moon: '\f470';
+  --icon-sun: '\f575';
+}
+
+.settings {
+  font-family: var(--icon-font);
+  font-size: 2em;
+}
+
+a.icon {
+  color: var(--text-color);
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+}
+
+ul.icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+span.icon {
+  vertical-align: middle;
+  font-family: var(--icon-font);
+  font-size: 2em;
+  &.settings::before { content: var(--icon-gear); }
+  &.github::before { content: var(--icon-github); }
+  &.close::before { content: var(--icon-close); color: var(--ixm-red); }
+  &.mode::before { content: var(--icon-moon); }
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css")

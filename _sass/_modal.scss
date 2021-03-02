@@ -1,0 +1,46 @@
+section.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 47;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  &:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  aside {
+    position: absolute;
+    padding: 1em;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--modal-background);
+    border: 1px solid var(--modal-border) {
+      radius: 1rem;
+    }
+    box-shadow: 0 2px 5px var(--black-fade-50);
+
+    display: grid;
+    grid: {
+      template-columns: 36px 1fr 1fr 36px;
+      auto-rows: min-content;
+    }
+
+
+    select { grid-column: 3; }
+    label { grid-column: 2; }
+    * { grid-column: 2 / span 2; }
+
+    a.icon { grid-column: 4; }
+
+    h1 {
+      margin-top: 0;
+    }
+  }
+}

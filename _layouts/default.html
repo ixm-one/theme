@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="{{ site.language | default: 'en' }}" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content=IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    {%- include fragment/opengraph.html -%}
+    {%- include fragment/twitter.html -%}
+    {%- if page.description -%}
+      <meta name="description" content="{{page.description}}">
+    {%- endif -%}
+
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="{{ 'assets/css/ixm.icons.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'assets/css/ixm.fonts.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'assets/css/ixm.main.css' | relative_url }}">
+
+    {%- assign favicon-32 = site.static_files | where: 'path', 'assets/img/favicon-32x32.png' | first -%}
+    {%- assign favicon-16 = site.static_files | where: 'path', 'assets/img/favicon-16x16.png' | first -%}
+    {%- assign favicon = site.static_files | where: 'path', 'assets/img/favicon.ico' | first  -%}
+
+    {%- if favicon-32 -%}
+      <link rel="icon" type="image/png" sizes="32x32" href="{{ favicon-32.path }}">
+    {% endif %}
+    {%- if favicon-16 -%}
+      <link rel="icon" type="image/png" sizes="16x16" href="{{ favicon-16.path }}">
+    {%- endif -%}
+    {%- if favicon -%}
+      <link rel="shortcut icon" href="{{ favicon.path }}">
+    {%- endif -%}
+    <script type="module" src="/assets/js/ixm.js" defer></script>
+    <title>{{ page.title }} &bull; {{ site.title }}</title>
+  </head>
+  <body>
+    <header>
+      {%- include fragment/menu.html menu=site.menu -%}
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <hr>
+    <footer>
+      {%- if site.copyright -%}<p>&copy; {{site.copyright }}{%- endif -%}
+      {%- if site.edit -%}
+        {%- assign repository = site.edit.repository | default: site.github.repository_url -%}
+        {%- assign branch = site.edit.branch | default: site.github.source.branch -%}
+        {%- assign source = site.edit.source | default: site.github.source.path -%}
+        {%- assign mode = site.edit.mode | default: "tree" -%}
+        {%- assign text = site.edit.text | default: "Edit this page on GitHub" -%}
+        <a href="{{repository}}/{{mode}}/{{branch}}{{source}}{{page.path}}">{{text}}</a>
+      {%- endif -%}
+    </footer>
+  </body>
+</html>

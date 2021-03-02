@@ -1,0 +1,59 @@
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  line-height: 1.2em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-foreground);
+  &:hover, &:focus, &:active {
+    text-decoration: underline dotted;
+    color: var(--link-foreground-hover);
+  }
+  &[href^="https://"]::after:not(.icon) {
+    font-family: var(--icon-font);
+    content: var(--icon-external-link);
+    padding-left: 0.2em;
+    font-size: 0.75em;
+    vertical-align: baseline;
+    line-height: 1.6em;
+  }
+}
+
+code:not(pre code) {
+  background: var(--code-background);
+  color: var(--code-foreground);
+  border-radius: 0.25rem;
+  line-height: 1.2;
+  padding: .1rem .2rem;
+  font: {
+    family: var(--code-font);
+    weight: bold;
+  }
+}
+
+table {
+  border: {
+    collapse: collapse;
+    spacing: 0;
+  }
+  width: auto;
+  tbody {
+    tr {
+      &:nth-of-type(2n+1) {
+        background-color: var(--table-background-stripe);
+      }
+      &:hover {
+        background-color: var(--table-background-hover);
+      }
+    }
+  }
+  th, td {
+    border-bottom: .1rem solid var(--table-border);
+    padding: .6rem .4rem;
+  }
+  th {
+    border-bottom-width: .2rem;
+  }
+}
+

@@ -1,0 +1,120 @@
+figure.highlight, pre.highlight {
+  code {
+    border: {
+      left: .5rem solid #2d6da3;
+      radius: 5px;
+    }
+    box-shadow: 0 2px 5px 0 var(--black-fade-50);
+    background: var(--syntax-background);
+    color: var(--syntax-foreground);
+    display: block;
+    margin: 0 auto;
+    padding: .5rem;
+    line-height: 1.3rem;
+    overflow-x: auto;
+    width: 100%;
+    font: {
+      family: var(--code-font);
+      weight: bold;
+    }
+  }
+
+  .esc { color: var(--syntax-escape); }
+  .err { color: var(--syntax-error); }
+  .x { color: var(--syntax-other); }
+  .w { color: var(--syntax-whitespace); }
+
+  .k { color: var(--syntax-keyword); }
+  .kc { color: var(--syntax-keyword-constant, var(--syntax-keyword)); }
+  .kd { color: var(--syntax-keyword-declaration, var(--syntax-keyword)); }
+  .kn { color: var(--syntax-keyword-namespace, var(--syntax-keyword)); }
+  .kp { color: var(--syntax-keyword-pseudo, var(--syntax-keyword)); }
+  .kr { color: var(--syntax-keyword-reserved, var(--syntax-keyword)); }
+  .kt { color: var(--syntax-keyword-type, var(--syntax-keyword)); }
+
+  .n { color: var(--syntax-name); }
+  .na { color: var(--syntax-name-attribute, var(--syntax-name)); }
+  .nb { color: var(--syntax-name-builtin, var(--syntax-name)); }
+  .np { color: var(--syntax-name-builtin-pseudo, var(--syntax-name-builtin)); }
+  .nc { color: var(--syntax-name-class, var(--syntax-name)); }
+  .no { color: var(--syntax-name-constant, var(--syntax-name)); }
+  .nd { color: var(--syntax-name-decorator, var(--syntax-name)); }
+  .ni { color: var(--syntax-name-entity, var(--syntax-name)); }
+  .ne { color: var(--syntax-name-exception, var(--syntax-name)); }
+  .nf { color: var(--syntax-name-function, var(--syntax-name)); }
+  .fm { color: var(--syntax-name-function-magic, var(--syntax-name-function)); }
+  .py { color: var(--syntax-name-property, var(--syntax-name)); }
+  .nl { color: var(--syntax-name-label, var(--syntax-name)); }
+  .nn { color: var(--syntax-name-namespace, var(--syntax-name)); }
+  .nx { color: var(--syntax-name-other, var(--syntax-name)); }
+  .nt { color: var(--syntax-name-tag, var(--syntax-name)); }
+  .nv { color: var(--syntax-name-variable, var(--syntax-name)); }
+  .vc { color: var(--syntax-name-variable-class, var(--syntax-name-variable)); }
+  .vg { color: var(--syntax-name-variable-global, var(--syntax-name-variable)); }
+  .vi { color: var(--syntax-name-variable-instance, var(--syntax-name-variable)); }
+  .vm { color: var(--syntax-name-variable-magic, var(--syntax-name-variable)); }
+
+  .l { color: var(--syntax-literal); }
+  .ld { color: var(--syntax-literal-date, var(--syntax-literal)); }
+
+  .s { color: var(--syntax-string); }
+  .sa { color: var(--syntax-string-affix, var(--syntax-string)); }
+  .sb { color: var(--syntax-string-backtick, var(--syntax-string)); }
+  .sc { color: var(--syntax-string-char, var(--syntax-string)); }
+  .dl { color: var(--syntax-string-delimiter, var(--syntax-string)); }
+  .sd { color: var(--syntax-string-doc, var(--syntax-string)); }
+  .s2 { color: var(--syntax-string-double, var(--syntax-string)); }
+  .se { color: var(--syntax-string-escape, var(--syntax-string)); }
+  .sh { color: var(--syntax-string-heredoc, var(--syntax-string)); }
+  .si { color: var(--syntax-string-interpol, var(--syntax-string)); }
+  .sx { color: var(--syntax-string-other, var(--syntax-string)); }
+  .sr { color: var(--syntax-string-regex, var(--syntax-string)); }
+  .s1 { color: var(--syntax-string-single, var(--syntax-string)); }
+  .ss { color: var(--syntax-string-symbol, var(--syntax-string)); }
+
+  .m { color: var(--syntax-number); }
+  .mb { color: var(--syntax-number-bin, var(--syntax-number)); }
+  .mf { color: var(--syntax-number-float, var(--syntax-number)); }
+  .mh { color: var(--syntax-number-hex, var(--syntax-number)); }
+  .mi { color: var(--syntax-number-integer, var(--syntax-number)); }
+  .il { color: var(--syntax-number-integer-long, var(--syntax-number-integer)); }
+  .mo { color: var(--syntax-number-oct, var(--syntax-number)); }
+
+  .o { color: var(--syntax-operator); }
+  .ow { color: var(--syntax-operator-word, var(--syntax-operator)); }
+
+  .p { color: var(--syntax-punctuation); }
+
+  .c { color: var(--syntax-comment); }
+  .ch { color: var(--syntax-comment-hashbang, var(--syntax-comment)); }
+  .cm { color: var(--syntax-comment-multiline, var(--syntax-comment)); }
+  .cp { color: var(--syntax-comment-preproc, var(--syntax-comment)); }
+  .cpf { color: var(--syntax-comment-preproc-file, var(--syntax-comment-preproc)); }
+  .c1 { color: var(--syntax-comment-single, var(--syntax-comment)); }
+  .c2 { color: var(--syntax-comment-special, vaar(--syntax-comment)); }
+  .g { color: var(--syntax-comment-generic, var(--syntax-comment)); }
+  .gd { color: var(--syntax-comment-deleted, var(--syntax-comment)); }
+  .ge { color: var(--syntax-comment-emph, var(--syntax-comment)); }
+  .gr { color: var(--syntax-comment-error, var(--syntax-comment)); }
+  .gh { color: var(--syntax-comment-heading, var(--syntax-comment)); }
+  .gi { color: var(--syntax-comment-inserted, var(--syntax-comment)); }
+  .go { color: var(--syntax-comment-output, var(--syntax-comment)); }
+  .gp { color: var(--syntax-comment-prompt, var(--syntax-comment)); }
+  .gs { color: var(--syntax-comment-strong, var(--syntax-comment)); }
+  .gu { color: var(--syntax-comment-subheading, var(--syntax-comment)); }
+  .gt { color: var(--syntax-comment-traceback, var(--syntax-comment)); }
+}
+
+ul.contributors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding-left: none;
+}
+
+span.ixm {
+  &.green { color: var(--ixm-green); }
+  &.blue { color: var(--ixm-blue); }
+  &.red { color: var(--ixm-red); }
+}

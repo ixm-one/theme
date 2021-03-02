@@ -1,0 +1,39 @@
+<nav>
+  {% include fragment/settings.html %}
+  <a href="{{ "index.html" | relative_url }}" role="img" aria-label="index">
+    {% assign logo = site.static_files | where: 'path', 'assets/img/logo.png' | first %}
+    {% if logo %}
+      <img src="{{ logo | relative_url }}" width=200 height=200 />
+    {% else %}
+      <h1>{{site.title}}</h1>
+    {% endif %}
+  </a>
+  <ul class="icons">
+    <li>
+      <a class="icon" alt="settings" href="#settings">
+        <span class="icon settings"></span>
+      </a>
+    </li>
+    <li>
+      <a class="icon" alt="change between light and dark mode">
+        <span class="icon mode"></span>
+      </a>
+    </li>
+    <li>
+      <a class="icon" alt="github repository" href="{{ site.github.repository_url | default: '#' }}">
+        <span class="icon github"></span>
+      </a>
+    </li>
+  </ul>
+  {% for entry in include.menu %}
+    <h3>{{ entry | capitalize }}</h3>
+    <ul>
+      {% assign pages = site.pages | where: "category", {{entry}} | sort: 'order' %}
+      {% for item in pages %}
+        <li>
+          <a href="{{item.url | default: '#' }}">{{item.title}}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</nav>

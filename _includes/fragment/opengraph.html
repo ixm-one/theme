@@ -1,0 +1,9 @@
+{% unless site.opengraph.title %}
+  <meta property="og:title" content="{{ page.title }} &bull; {{ site.title }}">
+{% endunless %}
+{%- unless site.opengraph.description -%}
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+{%- endunless -%}
+{%- for item in site.opengraph -%}
+  <meta name="og:{{item[0]}}" content="{{item[1]}}">
+{%- endfor -%}
