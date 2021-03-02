@@ -2,5 +2,5 @@
   <header>
     <h5>{{ include.type }}</h5>
   </header>
-  <p>{{ include.content }}</p>
+  {{ include.content | markdownify }}
 </aside>

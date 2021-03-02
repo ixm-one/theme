@@ -1,5 +1,6 @@
 <ul class="contributors">
-  {% for user in include.users %}
+  {% assign users = include.users | default: site.github.contributors %}
+  {% for user in users %}
     <li>
       <a href=" {{ user.html_url }}" alt="{{ user.login }}">
         {% avatar user=user.login size=50 %}
