@@ -13,7 +13,7 @@ While this makes local development difficult, the theme itself rarely changes.
 Add the following to your `_config.yml`:
 
 ```yaml
-remote_theme: ixm-one/theme
+remote_theme: ixm-one/theme@main
 ```
 
 # Development

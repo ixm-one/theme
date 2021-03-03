@@ -11,9 +11,3 @@
 
 *, *:after, *:before { box-sizing: inherit; }
 ::selection { background-color: var(--selection-color); }
-
-span.ixm {
- &.green { color: var(--ixm-green); }
- &.blue { color: var(--ixm-blue); }
- &.red { color: var(--ixm-red); }
-}
