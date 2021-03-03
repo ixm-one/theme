@@ -22,10 +22,10 @@ readme_index:
 
 # Theme Specific Settings
 edit:
-  repository: 'https://github.com/ixm-one/theme'
-  branch: 'main'
-  mode: 'edit'
-  text: 'Edit this page on GitHub'
+  #repository: 'https://github.com/ixm-one/theme'
+  #branch: 'main'
+  #mode: 'edit'
+  #text: 'Edit this page on GitHub'
   link: true
 
 # Site Specific

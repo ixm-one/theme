@@ -31,7 +31,7 @@
       {% assign pages = site.pages | where: "category", {{entry}} | sort: 'order' %}
       {% for item in pages %}
         <li>
-          <a href="{{item.url | default: '#' }}">{{item.title}}</a>
+          <a href="{{ item.url | relative_url | default: '#' }}">{{item.title}}</a>
         </li>
       {% endfor %}
     </ul>
