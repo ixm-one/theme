@@ -8,6 +8,6 @@
     display: swap;
   }
 
-  src: url('/assets/fonts/CascadiaCode.woff2') format('woff2'),
-       url('/assets/fonts/CascadiaCode.ttf');
+  src: url({{ '/assets/fonts/CascadiaCode.woff2' | relative_url }}) format('woff2'),
+       url({{ '/assets/fonts/CascadiaCode.ttf'| relative_url }});
 }
