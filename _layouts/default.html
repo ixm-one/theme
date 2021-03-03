@@ -16,18 +16,18 @@
     <link rel="stylesheet" href="{{ 'assets/css/ixm.fonts.css' | relative_url }}">
     <link rel="stylesheet" href="{{ 'assets/css/ixm.main.css' | relative_url }}">
 
-    {%- assign favicon-32 = site.static_files | where: 'path', 'assets/img/favicon-32x32.png' | first -%}
-    {%- assign favicon-16 = site.static_files | where: 'path', 'assets/img/favicon-16x16.png' | first -%}
-    {%- assign favicon = site.static_files | where: 'path', 'assets/img/favicon.ico' | first  -%}
+    {%- assign favicon-32 = site.static_files | where: 'path', '/assets/img/favicon-32x32.png' | first -%}
+    {%- assign favicon-16 = site.static_files | where: 'path', '/assets/img/favicon-16x16.png' | first -%}
+    {%- assign favicon = site.static_files | where: 'path', '/assets/img/favicon.ico' | first  -%}
 
     {%- if favicon-32 -%}
-      <link rel="icon" type="image/png" sizes="32x32" href="{{ favicon-32.path }}">
+      <link rel="icon" type="image/png" sizes="32x32" href="{{ favicon-32.path | relative_url }}">
     {% endif %}
     {%- if favicon-16 -%}
-      <link rel="icon" type="image/png" sizes="16x16" href="{{ favicon-16.path }}">
+      <link rel="icon" type="image/png" sizes="16x16" href="{{ favicon-16.path | relative_url }}">
     {%- endif -%}
     {%- if favicon -%}
-      <link rel="shortcut icon" href="{{ favicon.path }}">
+      <link rel="shortcut icon" href="{{ favicon.path | relative_url }}">
     {%- endif -%}
     <script type="module" src="/assets/js/ixm.js" defer></script>
     <title>{{ page.title }} &bull; {{ site.title }}</title>

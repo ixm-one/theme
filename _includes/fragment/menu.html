@@ -1,9 +1,9 @@
 <nav>
   {% include fragment/settings.html %}
   <a href="{{ "index.html" | relative_url }}" role="img" aria-label="index">
-    {% assign logo = site.static_files | where: 'path', 'assets/img/logo.png' | first %}
+    {% assign logo = site.static_files | where: 'path', '/assets/img/logo.png' | first %}
     {% if logo %}
-      <img src="{{ logo | relative_url }}" width=200 height=200 />
+      <img src="{{ logo.path | relative_url }}" width=200 height=200 />
     {% else %}
       <h1>{{site.title}}</h1>
     {% endif %}
