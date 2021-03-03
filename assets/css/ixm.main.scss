@@ -11,3 +11,25 @@
 
 *, *:after, *:before { box-sizing: inherit; }
 ::selection { background-color: var(--selection-color); }
+
+/* TO BE REFACTORED INTO A SEPARATE FILE */
+@keyframes slide-left {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes slide-right {
+  0% { transform: translateX(0); }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+li.slider {
+  &[data-visible] {
+    opacity: 1;
+    animation: slide-left 1s ease 0s forwards;
+  }
+  animation: slide-right 1s ease 0s forwards;
+}

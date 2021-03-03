@@ -152,6 +152,7 @@
   --atom-light-red: #c91243;
 }
 
+/* ayu false start -- REMOVE */
 :root {
   --ayu-000: #e6e1cf;
   --ayu-001: #191f26;
@@ -161,10 +162,103 @@
   --ayu-005: #95e6cb;
 }
 
-/* atom one dark */
-.cs {
- color:#5c6370;
- font-style:italic
+/* ayu light */
+:root {
+  --ayu-light-accent: #ff9940;
+  --ayu-light-background: #fafafa;
+  --ayu-light-foreground: #575f66;
+  --ayu-light-common-ui: #8a9199;
+  --ayu-light-syntax-tag: #55b4d4;
+  --ayu-light-syntax-func: #f2ae49;
+  --ayu-light-syntax-entity: #399ee6;
+  --ayu-light-syntax-string: #86b300;
+  --ayu-light-syntax-regexp: #4cbf99;
+  --ayu-light-syntax-markup: #f07171;
+  --ayu-light-syntax-keyword: #fa8d3e;
+  --ayu-light-syntax-special: #e6ba7e;
+  --ayu-light-syntax-comment: #abb0b6;
+  --ayu-light-syntax-constant: #a37acc;
+  --ayu-light-syntax-operator: #ed9366;
+  --ayu-light-syntax-error: #f51818;
+  --ayu-light-ui-line: #8a91991a;
+  --ayu-light-ui-panel-background: #ffffff;
+  --ayu-light-ui-panel-shadow: #424a5040;
+  --ayu-light-ui-panel-border: #f0f0f0;
+  --ayu-light-ui-gutter-normal: #8a919966;
+  --ayu-light-ui-gutter-active: #8a9199cc;
+  --ayu-light-ui-selection-background: #d1e4f4;
+  --ayu-light-ui-selection-inactive: #e7e8e9;
+  --ayu-light-ui-selection-border: #e1e1e2;
+  --ayu-light-ui-guide-active: #8a919959;
+  --ayu-light-ui-guide-normal: #8a91992e;
+  --ayu-light-vcs-added: #99bf4d;
+  --ayu-light-vcs-modified: #709ecc;
+  --ayu-light-vcs-removed: #f27983;
 }
-.ge { font-style:italic }
-.gs { font-weight:700 }
+
+/* ayu mirage */
+: root {
+  --ayu-mirage-accent: #ffcc66;
+  --ayu-mirage-background: #1f2430;
+  --ayu-mirage-foreground: #cbccc6;
+  --ayu-mirage-common-ui: #707a8c;
+  --ayu-mirage-syntax-tag: #5ccfe6;
+  --ayu-mirage-syntax-func: #ffd580;
+  --ayu-mirage-syntax-entity: #73d0ff;
+  --ayu-mirage-syntax-string: #bae67e;
+  --ayu-mirage-syntax-regexp: #95e6cb;
+  --ayu-mirage-syntax-markup: #f28779;
+  --ayu-mirage-syntax-keyword: #ffa759;
+  --ayu-mirage-syntax-special: #ffe6b3;
+  --ayu-mirage-syntax-comment: #5c6773;
+  --ayu-mirage-syntax-constant: #d4bfff;
+  --ayu-mirage-syntax-operator: #f29e74;
+  --ayu-mirage-syntax-error: #ff3333;
+  --ayu-mirage-ui-line: #191e2a;
+  --ayu-mirage-ui-panel-background: #232834;
+  --ayu-mirage-ui-panel-shadow: #141925;
+  --ayu-mirage-ui-panel-border: #101521;
+  --ayu-mirage-ui-gutter-normal: #707a8c66;
+  --ayu-mirage-ui-gutter-active: #707a8ccc;
+  --ayu-mirage-ui-selection-background: #33415e;
+  --ayu-mirage-ui-selection-inactive: #323a4c;
+  --ayu-mirage-ui-selection-border: #323a4c;
+  --ayu-mirage-ui-guide-active: #707a8cb3;
+  --ayu-mirage-ui-guide-normal: #707a8c4d;
+  --ayu-mirage-vcs-added: #a6cc70;
+  --ayu-mirage-vcs-modified: #77a8d9;
+  --ayu-mirage-vcs-removed: #f27983;
+}
+/* ayu dark */
+:root {
+  --ayu-dark-accent:  #e6b450;
+  --ayu-dark-background:  #0a0e14;
+  --ayu-dark-foreground:  #b3b1ad;
+  --ayu-dark-common-ui:  #4d5566;
+  --ayu-dark-syntax-tag:  #39bae6;
+  --ayu-dark-syntax-func:  #ffb454;
+  --ayu-dark-syntax-entity:  #59c2ff;
+  --ayu-dark-syntax-string:  #c2d94c;
+  --ayu-dark-syntax-regexp:  #95e6cb;
+  --ayu-dark-syntax-markup: #f07178;
+  --ayu-dark-syntax-keyword: #ff8f40;
+  --ayu-dark-syntax-special: #e6b673;
+  --ayu-dark-syntax-comment: #626a73;
+  --ayu-dark-syntax-constant: #ffee99;
+  --ayu-dark-syntax-operator: #f29668;
+  --ayu-dark-syntax-error: #ff3333;
+  --ayu-dark-ui-line: #00010a;
+  --ayu-dark-ui-panel-background: #0d1016;
+  --ayu-dark-ui-panel-shadow: #00010a;
+  --ayu-dark-ui-panel-border: #000000;
+  --ayu-dark-ui-gutter-normal: #4d556699;
+  --ayu-dark-ui-gutter-active: #4d5566e6;
+  --ayu-dark-ui-selection-background: #273747;
+  --ayu-dark-ui-selection-inactive: #1b2733;
+  --ayu-dark-ui-selection-border: #304357;
+  --ayu-dark-ui-guide-active: #4d5566b3;
+  --ayu-dark-ui-guide-normal: #4d556666;
+  --ayu-dark-vcs-added: #91b362;
+  --ayu-dark-vcs-modified: #6994bf;
+  --ayu-dark-vcs-removed: #d96c75;
+}
