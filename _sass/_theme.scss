@@ -145,7 +145,59 @@ html[data-syntax="atom-dark"] {
 }
 
 html[data-syntax="ayu-dark"] {
+  --syntax-foreground: var(--ayu-dark-foreground);
+  --syntax-background: var(--ayu-dark-background);
+  --syntax-mark-foreground: var(--ayu-dark-accent);
 
+  --syntax-error: var(--ayu-dark-syntax-error);
+  --syntax-name: var(--ayu-dark-syntax-entity);
+  --syntax-string: var(--ayu-dark-syntax-string);
+  --syntax-operator: var(--ayu-dark-syntax-operator);
+  --syntax-keyword: var(--ayu-dark-syntax-keyword);
+  --syntax-number: var(--ayu-dark-syntax-constant);
+  --syntax-comment: var(--ayu-dark-syntax-comment);
+
+  --syntax-name-function: var(--ayu-dark-syntax-func);
+  --syntax-name-tag: var(--ayu-dark-syntax-tag);
+
+  --syntax-string-regex: var(--ayu-dark-syntax-regexp);
+  --syntax-string-escape: var(--ayu-dark-syntax-markup);
+
+  --syntax-selection-background: var(--ayu-dark-ui-selection-background);
+  --syntax-selection-outline: var(--ayu-dark-ui-selection-border);
+  --syntax-border: 1px solid var(--ayu-dark-ui-panel-border);
+  --syntax-border-left: .5rem solid var(--ayu-dark-ui-panel-border);
+
+  --syntax-comment-inserted: var(--ayu-dark-vcs-added);
+  --syntax-comment-deleted: var(--ayu-dark-vcs-removed);
+}
+
+html[data-syntax="ayu-mirage"] {
+  --syntax-foreground: var(--ayu-mirage-foreground);
+  --syntax-background: var(--ayu-mirage-background);
+  --syntax-mark-foreground: var(--ayu-mirage-accent);
+
+  --syntax-error: var(--ayu-mirage-syntax-error);
+  --syntax-name: var(--ayu-mirage-syntax-entity);
+  --syntax-string: var(--ayu-mirage-syntax-string);
+  --syntax-operator: var(--ayu-mirage-syntax-operator);
+  --syntax-keyword: var(--ayu-mirage-syntax-keyword);
+  --syntax-number: var(--ayu-mirage-syntax-constant);
+  --syntax-comment: var(--ayu-mirage-syntax-comment);
+
+  --syntax-name-function: var(--ayu-mirage-syntax-func);
+  --syntax-name-tag: var(--ayu-mirage-syntax-tag);
+
+  --syntax-string-regex: var(--ayu-mirage-syntax-regexp);
+  --syntax-string-escape: var(--ayu-mirage-syntax-markup);
+
+  --syntax-selection-background: var(--ayu-mirage-ui-selection-background);
+  --syntax-selection-outline: var(--ayu-mirage-ui-selection-border);
+  --syntax-border: 1px solid var(--ayu-mirage-ui-panel-border);
+  --syntax-border-left: .5rem solid var(--ayu-mirage-ui-panel-border);
+
+  --syntax-comment-inserted: var(--ayu-mirage-vcs-added);
+  --syntax-comment-deleted: var(--ayu-mirage-vcs-removed);
 }
 
 /* color values taken from github.com/primer/github-syntax-dark */

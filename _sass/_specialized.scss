@@ -1,5 +1,6 @@
 figure.highlight, pre.highlight {
   code {
+    // TODO: Refactor to support changing *just* the color, not the whole style
     border: {
       bottom: var(--syntax-border-bottom, var(--syntax-border, 1px solid #2d6da3));
       right: var(--syntax-border-right, var(--syntax-border, 1px solid #2d6da3));
@@ -19,6 +20,15 @@ figure.highlight, pre.highlight {
     font: {
       family: var(--code-font);
       weight: bold;
+    }
+
+    &::selection, *::selection {
+      background-color: var(--syntax-selection-background, var(--selection-color));
+      outline: {
+        color: var(--syntax-selection-outline, initial);
+        width: 1px;
+        style: solid;
+      }
     }
 
     mark {
