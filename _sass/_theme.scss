@@ -200,6 +200,34 @@ html[data-syntax="ayu-mirage"] {
   --syntax-comment-deleted: var(--ayu-mirage-vcs-removed);
 }
 
+html[data-syntax="ayu-light"] {
+  --syntax-foreground: var(--ayu-light-foreground);
+  --syntax-background: var(--ayu-light-background);
+  --syntax-mark-foreground: var(--ayu-light-accent);
+
+  --syntax-error: var(--ayu-light-syntax-error);
+  --syntax-name: var(--ayu-light-syntax-entity);
+  --syntax-string: var(--ayu-light-syntax-string);
+  --syntax-operator: var(--ayu-light-syntax-operator);
+  --syntax-keyword: var(--ayu-light-syntax-keyword);
+  --syntax-number: var(--ayu-light-syntax-constant);
+  --syntax-comment: var(--ayu-light-syntax-comment);
+
+  --syntax-name-function: var(--ayu-light-syntax-func);
+  --syntax-name-tag: var(--ayu-light-syntax-tag);
+
+  --syntax-string-regex: var(--ayu-light-syntax-regexp);
+  --syntax-string-escape: var(--ayu-light-syntax-markup);
+
+  --syntax-selection-background: var(--ayu-light-ui-selection-background);
+  --syntax-selection-outline: var(--ayu-light-ui-selection-border);
+  --syntax-border: 1px solid var(--ayu-light-ui-panel-border);
+  --syntax-border-left: .5rem solid var(--ayu-light-ui-panel-border);
+
+  --syntax-comment-inserted: var(--ayu-light-vcs-added);
+  --syntax-comment-deleted: var(--ayu-light-vcs-removed);
+}
+
 /* color values taken from github.com/primer/github-syntax-dark */
 :root {
   --syntax-keyword: var(--red-400);
