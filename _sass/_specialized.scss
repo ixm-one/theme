@@ -20,6 +20,13 @@ figure.highlight, pre.highlight {
       family: var(--code-font);
       weight: bold;
     }
+
+    mark {
+      border-radius: 3px;
+      padding: 0 1px;
+      background-color: var(--syntax-mark-background, var(--selection-color));
+      color: var(--syntax-mark-foreground);
+    }
   }
 
   .esc { color: var(--syntax-escape); }
