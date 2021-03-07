@@ -1,0 +1,12 @@
+{%- assign favicon-32 = site.static_files | where: 'path', '/assets/img/favicon-32x32.png' | first -%}
+{%- assign favicon-16 = site.static_files | where: 'path', '/assets/img/favicon-16x16.png' | first -%}
+{%- assign favicon = site.static_files | where: 'path', '/assets/img/favicon.ico' | first -%}
+{%- if favicon-32 -%}
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ favicon-32.path | relative_url }}">
+{%- endif -%}
+{%- if favicon-16 -%}
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ favicon-16.path | relative_url }}">
+{%- endif -%}
+{%- if favicon -%}
+  <link rel="shortcut icon" href="{{ favicon.path | relative_url }}">
+{%- endif -%}

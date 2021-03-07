@@ -1,32 +1,28 @@
 <!doctype html>
-<html lang="{{ site.language | default: 'en' }}" prefix="og: https://ogp.me/ns#">
+<html>
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content=IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     {%- if page.description -%}
       <meta name="description" content="{{page.description}}">
     {%- endif -%}
-
     {%- include fragment/opengraph.html -%}
     {%- include fragment/twitter.html -%}
 
-    {%- include fragment/stylehseets.html -%}
+    {%- include fragment/stylesheets.html -%}
     {%- include fragment/favicon.html -%}
-    <script type="module" src="{{ '/assets/js/ixm.js'| relative_url }}" defer></script>
+    <script type="module" src="{{ '/assets/js/ixm.js' | relative_url }}" defer></script>
     <title>{%- if page.title -%}{{ page.title }} &bull; {%- endif -%}{{ site.title }}</title>
   </head>
   <body>
     <header>
-      {%- include fragment/menu.html menu=site.menu -%}
     </header>
     <main>
       {{ content }}
     </main>
-    <hr>
     <footer>
-      {%- if site.copyright -%}<p>&copy; {{site.copyright }}</p>{%- endif -%}
-      {%- include fragment/edit-page.html -%}
+      {%- if site.copyright -%}<small>&copy; {{ site.copyright }}</small>{%- endif -%}
     </footer>
   </body>
 </html>
