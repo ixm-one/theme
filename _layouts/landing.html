@@ -17,12 +17,17 @@
   </head>
   <body>
     <header>
+      {% for section in page.sections.headers %}
+        {% include headers/{{section}} %}
+      {% endfor %}
     </header>
     <main>
       {{ content }}
     </main>
     <footer>
-      {%- if site.copyright -%}<small>&copy; {{ site.copyright }}</small>{%- endif -%}
+      {% for section in page.sections.footers %}
+        {% include footers/{{section}} %}
+      {% endfor %}
     </footer>
   </body>
 </html>
