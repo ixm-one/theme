@@ -2,3 +2,6 @@
 <link rel="stylesheet" href="{{ 'assets/css/ixm.icons.css' | relative_url }}">
 <link rel="stylesheet" href="{{ 'assets/css/ixm.fonts.css' | relative_url }}">
 <link rel="stylesheet" href="{{ 'assets/css/ixm.main.css' | relative_url }}">
+{%- for stylesheet in page.assets.stylesheets -%}
+  <link rel="stylesheet" href="{{ stylesheet | relative_url }}">
+{%- endfor -%}
